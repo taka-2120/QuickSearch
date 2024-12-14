@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Search Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Quick Search</h1>
+
+    <form class="search-section" id="google">
+      <h3>Google</h3>
+      <input type="text" id="google-query" placeholder="Search Google">
+      <button onclick="search('google')">Search</button>
+    </form>
+
+    <form class="search-section" id="duckduckgo">
+      <h3>DuckDuckGo</h3>
+      <input type="text" id="duckduckgo-query" placeholder="Search DuckDuckGo">
+      <button onclick="search('duckduckgo')">Search</button>
+    </form>
+
+    <form class="search-section" id="amazon">
+      <h3>Amazon</h3>
+      <input type="text" id="amazon-query" placeholder="Search Amazon">
+      <button onclick="search('amazon')">Search</button>
+    </form>
+
+    <form class="search-section" id="youtube">
+      <h3>YouTube</h3>
+      <input type="text" id="youtube-query" placeholder="Search YouTube">
+      <button onclick="search('youtube')">Search</button>
+    </form>
+
+    <form class="search-section" id="youtube">
+      <h3>GitHub Repository</h3>
+      <input type="text" id="github-repo-query" placeholder="Search GitHub Repository">
+      <button onclick="search('github-repo')">Search</button>
+    </form>
+
+    <form class="search-section" id="chatgpt">
+      <h3>ChatGPT</h3>
+      <input type="text" id="chatgpt-query" placeholder="Send a prompt to ChatGPT">
+      <button onclick="search('chatgpt')">Send</button>
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
